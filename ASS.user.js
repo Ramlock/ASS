@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         ASS
 // @namespace    https://github.com/Ramlock/ASS/
-// @version      1.0
+// @version      1.1
 // @description  Auto Steam Salien
 // @author       Ramlock
 // @match        *://steamcommunity.com/saliengame/play
