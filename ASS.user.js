@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         ASS
 // @namespace    https://github.com/Ramlock/ASS/
-// @version      1.2.1
+// @version      1.2.2
 // @description  Auto Steam Salien
 // @author       Ramlock
 // @match        *://steamcommunity.com/saliengame/play
@@ -24,10 +24,14 @@ setInterval(function(){
 },50);
 
 setInterval(function(){
+    
+    let elems = document.getElementsByClassName("btn_grey_white_innerfade");
+    if(elems && elems.length == 1){
+        document.getElementsByClassName("btn_grey_white_innerfade")[0].click();
+        return;
+    }
+    
     if(!gGame || !gGame.m_State || gGame.m_IsStateLoading){
-        let elems = document.getElementsByClassName("btn_grey_white_innerfade");
-        if(elems && elems.length == 1)
-            document.getElementsByClassName("btn_grey_white_innerfade")[0].click();
         return;
     }
     
