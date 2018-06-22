@@ -6,8 +6,8 @@
 // @author       Ramlock
 // @match        *://steamcommunity.com/saliengame/play
 // @match        *://steamcommunity.com/saliengame/play/*
-// @updateURL    https://raw.githubusercontent.com/Ramlock/ASS/master/main.js
-// @downloadURL  https://raw.githubusercontent.com/Ramlock/ASS/master/main.js
+// @updateURL    https://raw.githubusercontent.com/Ramlock/ASS/master/ASS.user.js
+// @downloadURL  https://raw.githubusercontent.com/Ramlock/ASS/master/ASS.user.js
 // @grant        none
 // ==/UserScript==
 
