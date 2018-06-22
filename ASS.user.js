@@ -25,6 +25,9 @@ setInterval(function(){
 
 setInterval(function(){
     if(!gGame || !gGame.m_State || gGame.m_IsStateLoading) return;
+    
+    if(gGame.m_State.button)
+        gGame.m_State.button.click();
 
     if(gGame.m_State.m_Grid && gGame.m_State.m_Grid.m_Tiles){
         for (let i=0; i<gGame.m_State.m_Grid.m_Tiles.length; i++) {
