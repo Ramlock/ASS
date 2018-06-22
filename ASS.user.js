@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         ASS
 // @namespace    https://github.com/Ramlock/ASS/
-// @version      1.2
+// @version      1.2.1
 // @description  Auto Steam Salien
 // @author       Ramlock
 // @match        *://steamcommunity.com/saliengame/play
@@ -33,7 +33,6 @@ setInterval(function(){
     
     if(gGame.m_State.button){
         gGame.m_State.button.click();
-        return;
     }
     
     if(gGame.m_State.m_Grid && gGame.m_State.m_Grid.m_Tiles){
