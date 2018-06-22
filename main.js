@@ -1,10 +1,12 @@
 // ==UserScript==
-// @name         Auto Salien
-// @namespace    http://tampermonkey.net/
+// @name         ASS
+// @namespace    https://github.com/Ramlock/ASS/
 // @version      1.0
-// @description  Auto-plays Steam Salien
-// @author       Someone
-// @match        http://tampermonkey.net/index.php?version=4.6&ext=dhdg&updated=true
+// @description  Auto Steam Salien
+// @author       Ramlock
+// @match        *://https://steamcommunity.com/saliengame/play*
+// @updateURL    https://raw.githubusercontent.com/Ramlock/ASS/master/main.js
+// @downloadURL  https://raw.githubusercontent.com/Ramlock/ASS/master/main.js
 // @grant        none
 // ==/UserScript==
 
