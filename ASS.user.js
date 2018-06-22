@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         ASS
 // @namespace    https://github.com/Ramlock/ASS/
-// @version      1.2.3
+// @version      1.2.4
 // @description  Auto Steam Salien
 // @author       Ramlock
 // @match        *://steamcommunity.com/saliengame/play
@@ -18,7 +18,7 @@ setInterval(function(){
 
     if(gGame.m_State.m_EnemyManager && gGame.m_State.m_EnemyManager.m_rgEnemies &&
     gGame.m_State.m_EnemyManager.m_rgEnemies.entries()) {
-        gGame.m_State.m_EnemyManager.m_rgEnemies.forEach(function(e){e.m_Sprite.click());
+        gGame.m_State.m_EnemyManager.m_rgEnemies.forEach(function(e){e.m_Sprite.click();});
     }
 
 },200);
