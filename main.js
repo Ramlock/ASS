@@ -4,7 +4,7 @@
 // @version      1.0
 // @description  Auto Steam Salien
 // @author       Ramlock
-// @match        *://steamcommunity.com/saliengame/play*
+// @match        *://steamcommunity.com/saliengame/play
 // @updateURL    https://raw.githubusercontent.com/Ramlock/ASS/master/main.js
 // @downloadURL  https://raw.githubusercontent.com/Ramlock/ASS/master/main.js
 // @grant        none
