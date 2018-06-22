@@ -24,11 +24,18 @@ setInterval(function(){
 },50);
 
 setInterval(function(){
-    if(!gGame || !gGame.m_State || gGame.m_IsStateLoading) return;
+    if(!gGame || !gGame.m_State || gGame.m_IsStateLoading){
+        let elems = document.getElementsByClassName("btn_grey_white_innerfade");
+        if(elems && elems.length == 1)
+            document.getElementsByClassName("btn_grey_white_innerfade")[0].click();
+        return;
+    }
     
-    if(gGame.m_State.button)
+    if(gGame.m_State.button){
         gGame.m_State.button.click();
-
+        return;
+    }
+    
     if(gGame.m_State.m_Grid && gGame.m_State.m_Grid.m_Tiles){
         for (let i=0; i<gGame.m_State.m_Grid.m_Tiles.length; i++) {
             if(!gGame.m_State.m_Grid.m_Tiles[i].Info.captured && gGame.m_State.m_Grid.m_Tiles[i].Info.difficulty == 3) {
